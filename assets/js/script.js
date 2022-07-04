@@ -1,3 +1,30 @@
+// Wait for the DOM to finish loading before running the page
+document.addEventListener("DOMContentLoaded", () => {
+    let pageName = window.location.pathname.split("/").pop();
+
+    if (pageName === "library.html") {
+        library.getPicks();
+
+    } else if (pageName === "category.html") {
+        let cat = new URLSearchParams(window.location.search).get('cat');
+        library.getCategory(cat);
+
+    } else if (pageName === "book.html") {
+        let id = new URLSearchParams(window.location.search).get('id');
+
+        let book;
+        for (let i in library) {
+            if (library[i].id == id) {
+                book = library[i];
+                break;
+            }
+        }
+
+        book.openBook();
+
+    }
+});
+
 // Book class
 class book {
     constructor(_id, _title, _author, _description, _cover, _book, _picks, _genre, _mood) {
