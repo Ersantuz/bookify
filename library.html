@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your favourite books always at your fingertips.">
+    <meta name="keywords" content="bookify, book, reading, online reading">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/images/logo.webp" sizes="16x16">
+    <title>Bookify</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <h1 class="logo"> <img src="assets/images/logo.webp" alt="logo"> Bookify</h1>
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html" aria-label="go to homepage" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="library.html" aria-label="go to the library home page">Library</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Library</h1>
+        <section id="shelve"></section>
+        <fieldset id="genre">
+            <legend>Genres</legend>
+            <a href="category.html?cat=fiction" aria-label="link to 'fiction' genre page">Fiction</a>
+            <a href="category.html?cat=poetry" aria-label="link to 'poetry' genre page">Poetry</a>
+            <a href="category.html?cat=drama" aria-label="link to 'drama' genre page">Drama</a>
+            <a href="category.html?cat=comedy" aria-label="link to 'comedy' genre page">Comedy</a>
+            <a href="category.html?cat=philosophy" aria-label="link to 'philosophy' genre page">Philosophy</a>
+        </fieldset>
+        <fieldset id="mood">
+            <legend>Mood</legend>
+            <a href="category.html?cat=happy" aria-label="link to 'happy' genre page">Happy</a>
+            <a href="category.html?cat=sad" aria-label="link to 'sad' genre page">Sad</a>
+            <a href="category.html?cat=energetic" aria-label="link to 'energetic' genre page">Energetic</a>
+            <a href="category.html?cat=nostalgic" aria-label="link to 'nostalgic' genre page">Nostalgic</a>
+            <a href="category.html?cat=nerdy" aria-label="link to 'nerdy' genre page">Nerdy</a>
+        </fieldset>
+    </main>
+    <footer>
+        <p>&copy; Agree to Disagree 2022</p>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
