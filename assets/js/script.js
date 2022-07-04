@@ -44,3 +44,44 @@ class book {
         return bookHTML;
     }
 }
+
+// Library object
+let library = {
+
+    // Methods
+    /** This function provides a method to select the books in the library that are considered top picks 
+     *  and builds the HTML code in order to add them to the page
+     */
+    getPicks() {
+        let selection = "";
+        for (let book of Object.values(this)) {
+            if (book.pick) {
+                selection += book.previewBook();
+            } else {
+                selection += "";
+            }
+        }
+
+        document.getElementById("shelve").innerHTML = selection;
+
+    },
+
+    /** This function provides a method to select the books in the library that belong to the same category 
+     *  and builds the HTML code in order to add them to the page
+     */
+    getCategory(category) {
+        document.getElementById("title").innerHTML = category;
+
+        let selection = "";
+        for (let book of Object.values(this).slice(2)) {
+            if (Object.values(book.genre).includes(category) || Object.values(book.mood).includes(category)) {
+                selection += book.previewBook();
+            } else {
+                selection += "";
+            }
+        }
+
+        document.getElementById("shelve").innerHTML = selection;
+
+    }
+}
