@@ -29,11 +29,19 @@
     <main>
         <h1>Book</h1>
         <section id="book-details"></section>
+        <section id="render" style="display: none;">
+            <div onclick="rendition.prev();">prev</div>
+            <div id="area"></div>
+            <div onclick="rendition.next();">next</div>
+        </section>
     </main>
     <footer>
         <p>&copy; Agree to Disagree 2022</p>
     </footer>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/database.js"></script>
+    <!-- script from https://github.com/futurepress/epub.js/ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js"></script>
+    <script src="assets/js/libraries/epub.min.js"></script>
 </body>
 </html>

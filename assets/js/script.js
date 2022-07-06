@@ -22,8 +22,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
         book.openBook();
 
+        let readBook = document.createElement("script");
+        readBook.innerHTML = `
+        var read = ePub('${book.path}');
+        var rendition = read.renderTo('area');
+        rendition.display();`;
+        document.body.appendChild(readBook);
+
+        document.getElementsByTagName("button")[0].addEventListener("click", showBook);
+
     }
 });
+
+// Functions
+/** Shows the book in the book area 
+ */
+function showBook() {
+    document.getElementById("render").style.display = "block";
+}
 
 // Book class
 class book {
@@ -70,6 +86,7 @@ class book {
                             </article>`;
         return bookHTML;
     }
+
 }
 
 // Library object
