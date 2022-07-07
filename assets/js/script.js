@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.appendChild(readBook);
 
         document.getElementsByTagName("button")[0].addEventListener("click", showBook);
-
+        document.getElementById("close-render").addEventListener("click", closeBook);
     }
 });
 
@@ -44,6 +44,12 @@ document.addEventListener("DOMContentLoaded", () => {
  */
 function showBook() {
     document.getElementById("render").style.display = "block";
+}
+
+/** Hides the book area 
+ */
+ function closeBook() {
+    document.getElementById("render").style.display = "none";
 }
 
 // Book class
