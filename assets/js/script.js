@@ -24,9 +24,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
         let readBook = document.createElement("script");
         readBook.innerHTML = `
-        var read = ePub('${book.path}');
-        var rendition = read.renderTo('area');
-        rendition.display();`;
+        let read = ePub('${book.path}');
+        let rendition = read.renderTo('area');
+        rendition.display();
+        rendition.on("keyup", event => {
+            let kc = event.keyCode || event.which;
+            if (kc == 37) rendition.prev();
+            if (kc == 39) rendition.next();
+        });`;
         document.body.appendChild(readBook);
 
         document.getElementsByTagName("button")[0].addEventListener("click", showBook);

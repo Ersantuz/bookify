@@ -30,9 +30,10 @@
         <h1>Book</h1>
         <section id="book-details"></section>
         <section id="render" style="display: none;">
-            <div onclick="rendition.prev();">prev</div>
+            <div id="close-render"><i class="fa-solid fa-circle-xmark"></i></div>
+            <div onclick="rendition.prev();"><i class="fa-solid fa-angle-left"></i></div>
             <div id="area"></div>
-            <div onclick="rendition.next();">next</div>
+            <div onclick="rendition.next();"><i class="fa-solid fa-angle-right"></i></div>
         </section>
     </main>
     <footer>
@@ -40,6 +41,8 @@
     </footer>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/database.js"></script>
+    <!-- fontawsome script -->
+    <script src="https://kit.fontawesome.com/5a447ed7c5.js" crossorigin="anonymous"></script>
     <!-- script from https://github.com/futurepress/epub.js/ -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js"></script>
     <script src="assets/js/libraries/epub.min.js"></script>
