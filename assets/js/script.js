@@ -78,7 +78,7 @@ class book {
                             <img src=${this.cover} alt="${this.title} book cover">
                             <button type="button" class="btn">Read me!</button>
                             <h1>${this.title}</h1>
-                            <h2>By ${this.author}</h2>
+                            <h2>by ${this.author}</h2>
                             <p>${this.description}</p>
                         </article>`;
 
