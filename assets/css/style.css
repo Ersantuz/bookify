@@ -85,3 +85,20 @@ nav a:hover {
 nav .active {
     color: var(--active);
 } 
+
+/* Footer */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;   /* Height of the footer */
+    background: inherit;
+ }
+
+ footer p {
+     color: var(--active);
+     font-size: 80%;
+     float: right;
+     margin-right: 20px;
+ }
