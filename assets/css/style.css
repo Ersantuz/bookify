@@ -5,7 +5,7 @@
     --bg: #fff6f1;
     --text: #3a3a3a;
     --highlight: #df7861;
-    --footer: #94b49f;
+    --about: #94b49f;
     --active: #b4604e;
     --button: #ecb390;
 }
@@ -25,6 +25,13 @@ body {
 
     height: 100vh;
     letter-spacing: 1px;
+
+    display: grid;
+    grid-template-rows: 7vh 93vh;
+}
+
+.highlight {
+    color: var(--highlight);
 }
 
 /* Header */
@@ -89,16 +96,102 @@ nav .active {
 /* Footer */
 
 footer {
+    width: 100%;
+    height: 30px;
+    background: transparent;
     position: fixed;
     bottom: 0;
-    width: 100%;
-    height: 30px;   /* Height of the footer */
-    background: inherit;
- }
+}
 
- footer p {
-     color: var(--active);
-     font-size: 80%;
-     float: right;
-     margin-right: 20px;
- }
+footer p {
+    color: var(--text);
+    font-size: 80%;
+    float: right;
+    margin-right: 20px;
+}
+
+/* Home Page */
+
+#landing {
+    width: 100%;
+    height: 100%;
+
+    background: url('../images/homepage.webp') no-repeat center center;
+    background-size: 100% 100%;
+}
+
+#landing > article {
+    text-align: center;
+    transform: translateY(20vh);
+}
+
+#landing h1 {
+    font-size: 6vw;
+    padding-right: 15vw;
+}
+
+#landing span {
+    padding-left: 25vw;
+}
+
+#landing p {
+    font-size: 2vw;
+}
+
+/* Call to action 
+   button style from https://getcssscan.com/css-buttons-examples 
+*/
+#landing a {
+    margin-top: 2vh;
+    width: 10vw;
+    background-color: var(--button);
+    border: 2px solid var(--text);
+    border-radius: 30px;
+    box-shadow: var(--text) 4px 4px 0 0;
+    color: var(--text);
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+} 
+  
+#landing a:hover {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+}
+
+/* About */
+
+#about {
+    width: 100%;
+    height: 100%;
+
+    color: var(--bg);
+    background-color: var(--about);
+}
+
+#about h1 {
+    transform: translateX(8vw) translateY(15vh);
+    font-size: 4vw;
+}
+
+#about span {
+    font-weight: 800;
+}
+
+#about p {
+    width: 55vw;
+    padding: 0 5vw;
+    float: right;
+    font-size: 1.5vw;
+    border-left: 2px solid var(--bg);
+    transform: translateY(20vh);
+}
+
