@@ -24,18 +24,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
         let readBook = document.createElement("script");
         readBook.innerHTML = `
-        let read = ePub('${book.path}');
-        let rendition = read.renderTo('area');
+        const read = ePub('${book.path}');
+        const rendition = read.renderTo("area");
+        read.rendition.spread("none",1);
+        rendition.themes.override("font-size", "100%");
+        rendition.themes.override("max-height", "80vh");
+        rendition.themes.override('width', '70vw');
         rendition.display();
-        rendition.on("keyup", event => {
-            let kc = event.keyCode || event.which;
-            if (kc == 37) rendition.prev();
-            if (kc == 39) rendition.next();
-        });`;
+        `;
         document.body.appendChild(readBook);
 
         document.getElementsByTagName("button")[0].addEventListener("click", showBook);
         document.getElementById("close-render").addEventListener("click", closeBook);
+
     }
 });
 
@@ -44,12 +45,16 @@ document.addEventListener("DOMContentLoaded", () => {
  */
 function showBook() {
     document.getElementById("render").style.display = "block";
+    document.getElementById("book-details").style.display = "none";
+    document.getElementsByClassName("go-back")[0].style.display = "none";
 }
 
 /** Hides the book area 
  */
  function closeBook() {
     document.getElementById("render").style.display = "none";
+    document.getElementById("book-details").style.display = "block";
+    document.getElementsByClassName("go-back")[0].style.display = "block";
 }
 
 // Book class
