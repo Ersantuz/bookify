@@ -6,7 +6,7 @@ library.strogoff = new book(
     `According to Wikipedia, this is one of Verne's best books. "Michael Strogoff is a courier for the czar Alexander II of Russia. When the Tatar king Feofar Khan invades Russia, Strogoff is sent to Irkutsk to warn the governor, who is the brother of the czar, against the traitor Ivan Ogareff." Also according to Wikipedia: "Jules Gabriel Verne (February 8, 1828 - March 24, 1905) was a French author who pioneered the science-fiction genre. He is best known for his novels Journey to the Center of the Earth (written in 1864), From the Earth to the Moon (1865), Twenty Thousand Leagues Under the Sea (1869-1870), and Around the World in Eighty Days (1873). Verne wrote about space, air, and underwater travel before navigable aircraft and practical submarines were invented, and before any means of space travel had been devised. Consequently he is often referred to as the "Father of science fiction", along with H. G. Wells. Verne is the second most translated author of all time, only behind Agatha Christie with 4162 translations, according to Index Translationum. Some of his work has been made into films."`,
     `strogoff.webp`,
     `jules-verne_michael-strogoff_w-h-g-kingston.epub`,
-    true,
+    false,
     [`fiction`],
     [`energetic`]);
 

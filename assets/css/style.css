@@ -14,6 +14,7 @@
     margin: 0;
     padding: 0;
     border: none;
+    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -27,13 +28,12 @@ body {
     color: var(--text);
     background-color: var(--bg);
 
-    height: 100vh;
+    height: 100%;
+    max-width: 100%;
     letter-spacing: 1px;
 
     display: grid;
-    grid-template-rows: 7vh 93vh;
-
-    overflow-x: hidden;
+    grid-template-rows: 8vh 92vh;
 }
 
 a {
@@ -53,7 +53,7 @@ a:hover {
 
 header {
     width: 100%;
-    height: 7vh;
+    height: 8vh;
     z-index: 99;
 }
 
@@ -154,7 +154,7 @@ footer p {
 */
 .btn {
     margin-top: 2vh;
-    width: 10vw;
+    width: 15vw;
     background-color: var(--button);
     border: 2px solid var(--text);
     border-radius: 30px;
@@ -163,7 +163,7 @@ footer p {
     cursor: pointer;
     display: inline-block;
     font-weight: 600;
-    font-size: 1vw;
+    font-size: 1.2vw;
     padding: 0 18px;
     line-height: 50px;
     text-align: center;
@@ -209,20 +209,26 @@ footer p {
 /* Library */
 
 .page-title {
-    font-size: 1.3vw;
+    font-size: 1.4vw;
     transform: translateX(5vw) translateY(3vh);
     text-transform: capitalize;
 }
 
 #shelve {
     width: 100vw;
-    margin-top: 3vh;
+    margin-top: 1.5vh;
+    overflow-y: visible;
+    transform: translateX(1.5vw)
 }
 
 .book {
+    padding-top: 3vh;
+    overflow-y: visible;
+    overflow-x: visible;
+    z-index: 99;
     clear: both;
     vertical-align: top;
-    width: 10vw;
+    width: 12vw;
     display: inline-block;
     margin: 2vh 2vw;
 }
@@ -239,19 +245,20 @@ footer p {
 }
 
 .book h1 {
-    font-size: 0.7vw;
+    font-size: 1vw;
 }
 
 .book h2 {
-    font-size: 0.7vw;
+    font-size: 1vw;
     color: var(--active);
 }
 
 /* Fieldset */
 
 fieldset {
+    overflow-x: visible;
     float: left;
-    margin: 10vh 3vw;
+    margin: 5vh 4vw;
 	display: grid;
     gap: 5px;
     grid-template-columns: 10vw 10vw 10vw 10vw;
@@ -303,17 +310,22 @@ fieldset a:hover {
 /* Book */
 
 .go-back {
-    transform: translateX(5vw) translateY(3vh);
+    transform: translateX(5vw) translateY(5vh);
     font-weight: 400;
     font-size: 1vw;
+    z-index: 99;
+}
+
+#book-details {
+    margin-top: 3vh;
 }
 
 .open-book {
     margin: 5vh 5vw;
     display: grid;
-    gap: 1vh 3vw;
+    gap: 0 5vw;
     grid-template-columns: 20vw 65vw;
-    grid-template-rows: 10vh 50vh 9vh ;
+    grid-template-rows: min-content min-content;
 }
 
 .open-book img {
@@ -321,12 +333,22 @@ fieldset a:hover {
     border-radius: 5px;
 
     grid-column: 1;
-    grid-row: 1 /span 2;
+}
+
+.open-book .btn {
+    width: 15vw;
+    height: 7vh;
+    margin: 1vh auto;
+    grid-column: 1;
+    grid-row: 2 / span 1;
 }
 
 .open-book div {
+    display: inline;
     grid-column: 2;
-    grid-row: 1;
+    grid-row: 1 / span 2;
+    height: fit-content;
+    max-height: 60vh;
 }
 
 .open-book h1 {
@@ -339,19 +361,14 @@ fieldset a:hover {
 
 .open-book p {
     grid-column: 2;
-    grid-row: 2 / span 2;
+    grid-row: 1;
     text-align: justify;
-    padding-top: 3vh;
+    margin-top: 10vh;
     line-height: 1.4;
     font-size: 1.05vw;
     overflow-y: scroll;
-}
-
-.open-book .btn {
-    grid-column: 1;
-    width: 15vw;
-    height: 7vh;
-    margin: 1vh auto auto auto;
+    grid-row: 1 / span 2;
+    max-height: 50vh;
 }
 
 /* Book render */
