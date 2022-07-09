@@ -74,11 +74,13 @@ class book {
      *  its web page
      */
     openBook() {
-        const bookHTML = `<article class="book">
+        const bookHTML = `<article class="open-book">
                             <img src=${this.cover} alt="${this.title} book cover">
                             <button type="button" class="btn">Read me!</button>
-                            <h1>${this.title}</h1>
-                            <h2>by ${this.author}</h2>
+                            <div>
+                                <h1>${this.title}</h1>
+                                <h2>by ${this.author}</h2>
+                            </div>
                             <p>${this.description}</p>
                         </article>`;
 
