@@ -146,4 +146,4 @@ let library = {
         document.getElementById("shelve").innerHTML = selection;
 
     }
-}
+};

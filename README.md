@@ -1,108 +1,158 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<h1 align="center">
+    <img src="assets/images/logo.webp" width=30 alt="Bookify logo"/> Bookify
+</h1>
 
-Welcome Lorenzo Santucci,
+[View the live project here.](https://ersantuz.github.io/bookify/)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+Welcome to Bookify! You can now have always your favourite books at your fingertips. 
 
-## Gitpod Reminders
+The website is designed to be accessible everywhere, from your 💻 laptop at work to your ☎️ phone while travelling, making it perfect for every occasion. 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+<br>
+<h2 align="center"><img src="assets/images/screenshot.webp" id="wb-screen" alt="website screenshot" target="_blank" width=80%></h2>
 
-`python3 -m http.server`
+## Manifesto 
 
-A blue button should appear to click: _Make Public_,
+**Murphy's law 101: "Whenever I decide to leave the book home, I have plenty of time to read."**
 
-Another blue button should appear to click: _Open Browser_.
+We got you! Now, with Bookify, you will always have your favorite books at your fingertips. Take your time to relax and read on the device you prefer. Discover our top picks on your mobile, filter for genres with your iPad, or tell us your mood on your computer.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+Lose yourself in incredible stories and enjoy the journey.
 
-A blue button should appear to click: _Make Public_,
+## User Experience (UX)
 
-Another blue button should appear to click: _Open Browser_.
+-   ### User stories
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+    -   #### First Time Visitor Goals:
 
-To log into the Heroku toolbelt CLI:
+        As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the project and the team behind.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+    -   #### Frequent User Goals
+        As a Frequent Visitor, I want to be able to easily navigate throughout the site to find content I am interested to learn or read about.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+-   ### Design
+    -   #### Colour Scheme
+        The main colours used are:
+        - <span style="color:#fff6f1;"> Seashell Peach</span>, as a relaxing reading background. 
+        - <span style="color:#df7861;"> Terracotta</span>, used to make content stand out.
+        - <span style="color:#94b49f;"> Summer Green</span>, to add some color.  
+    -   #### Typography
+        -   The Montserrat font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason Inter isn't being imported into the site correctly. Montserrat is a font used frequently for printed material, such as brochures, signage and even books; so it is both attractive and appropriate.
 
-------
+*   ### Wireframes
 
-## Release History
+    -   Widescreen Wireframe - <a href="assets/pdf/Bookify - widescreens.pdf" target="_blank">View</a> 
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+    -   Mobile Wireframe - <a href="assets/pdf/Bookify - small screens.pdf" target="_blank">View</a> 
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+## Features
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+-   Responsive on all device sizes
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+-   Interactive buttons
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+## Technologies Used
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### Languages Used
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+-   [HTML5](https://en.wikipedia.org/wiki/HTML5)
+-   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+-   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+### Frameworks, Libraries & Programs Used
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+1. [Google Fonts:](https://fonts.google.com/)
+    - Google fonts were used to import the 'Montserrat' font into the style.css file which is used on all pages throughout the project.
+1. [epub.js:](https://github.com/futurepress/epub.js/)
+    - epub.js was used to render epub documents on the website, essential in the purpose of the website.
+1. [Font Awesome:](https://fontawesome.com/)
+    - Font Awesome was used on throughout the website to add icons for aesthetic and UX purposes.
+1. [Canva:](https://www.canva.com/)
+    - Canva was used to design the logo and the landing page background.
+1. [Git](https://git-scm.com/)
+    - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+1. [GitHub:](https://github.com/)
+    - GitHub is used to store the projects code after being pushed from Git.
+1. [Standard Ebooks:](https://standardebooks.org/)
+    - Standard Ebooks provided the ebooks, book covers and book description.
+1. [Page2images:](https://www.page2images.com/)
+    - Page2images was used to create the [website screenshot](#wb-screen).
+1. [Balsamiq:](https://balsamiq.com/)
+    - Balsamiq was used to create the [wireframes](#wireframes) during the design process.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+## Testing
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+The W3C Markup Validator, W3C CSS Validator Services and JSHint were used to validate every page of the project to ensure there were no syntax errors in the project. Lighthouse was used to validate the quality of the website.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+-   [W3C Markup Validator](https://validator.w3.org/) - [Home Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fersantuz.github.io%2Fbookify%2Findex.html), [Library](https://validator.w3.org/nu/?doc=https%3A%2F%2Fersantuz.github.io%2Fbookify%2Flibrary.html), [Category](https://validator.w3.org/nu/?doc=https%3A%2F%2Fersantuz.github.io%2Fbookify%2Fcategory.html%3Fcat%3Dhappy), [Book](https://validator.w3.org/nu/?doc=https%3A%2F%2Fersantuz.github.io%2Fbookify%2Fbook.html%3Fid%3D20)
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fersantuz.github.io%2Fbookify%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+-   [JSHint](https://jshint.com/) - No error found.
+-   [Lighthouse](https://developers.google.com/web/tools/lighthouse) - [Desktop](assets/pdf/lighthouse_desktop.pdf), [Mobile](assets/pdf/lighthouse_mobile.pdf)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### Testing User Stories from User Experience (UX) Section
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+-   #### First Time Visitor Goals
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+    As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the team behind the project.
 
-------
+    1. Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice. Underneath there is a clear and breaf description of the website purpose with a "Start Reading" call to action button.
+    1. The user has two options, navigate the website through a clear navigation bar or using the call to action buttons accessible by scrolling down the home page. Both choice will lead to the same results.
 
-## FAQ about the uptime script
+-   #### Frequent User Goals
 
-**Why have you added this script?**
+    As a Frequent Visitor, I want to be able to easily navigate throughout the site to find content I am interested to learn or read about.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+    1. The site has been designed to be fluid and never to entrap the user. At the top of each page there is a clean navigation bar, each link describes what the page they will end up at clearly.
+    1. The theory part is designed to allow users to always know the category and the topic she/he is reading about. This aim is reached by highlighting in the navigation bar the section she/he is on, while (for theory sections) a sidebar for widescreens, and an hamburger style menu on mobiles and tablet, will clearly tell the user the topic of the page. Each theory section has a main page in which every topic is accessible through buttons. Finally, inside any topic's page the user can access other topic belonging to the same section through the sidebar and can access the section main page using either the navigation bar or a button at the end of the page.   
 
-**How will this affect me?**
+### Further Testing
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+-   The website was tested on Google Chrome, Microsoft Edge, Firefox and Safari.
+-   The website was viewed on a variety of devices such as Desktop, Laptop, iPad Air, iPad Mini, iPhone SE, iPhone XR.
+-   A large amount of testing was done to ensure that all pages were linking correctly.
+-   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+-   Friends from economics' courses were asked to perform user testing to enanhce user experience throughout the website.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+### Known Bugs
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+-   On Safari the carousel design doesn't work.
+-   SEO performs worst on mobile devices since the paragraphs in the home page are hidden on smaller screen sizes.
+-   Theory pages belonging to the macroeconomics sections are still on development, hence the buttons designed to lend on the content page won't open any page.
 
-**So….?**
+### Further Developments
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+-   The content for macroeconomics chapters will be added soon.
+-   As outlined in the [manifesto](#manifesto), the website is planning to incorporate interactivity features in theoretical sections. This is planned to be done through the implentation of two main features: 
+    1. iframes are going to be added, containing interactive graphs designed on [geogebra](https://www.geogebra.org/), which will allow users to interact with graphs related to the theory.   
+    2. by means of python, [plotly](https://plotly.com/python/) interactive graphs will be added cointaining the results for major economic models. Such graphs will be interactive as they wll show how results changes by choosing different parameters of input.
 
-**Can I opt out?**
+## Deployment
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### GitHub Pages
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+The project was deployed to GitHub Pages using the following steps...
 
-**Anything more?**
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+3. Click on the "Pages" section in the navbar.
+4. Under "Source", click the dropdown called "None" and select "Master Branch".
+5. The page will automatically refresh.
+6. Scroll back down through the page to locate the now published site [link](https://ersantuz.github.io/pocket-economics/index.html) in the "GitHub Pages" section.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+## Credits
 
----
+### Content
 
-Happy coding!
+-   All the pages were designed by the developer, always listening the precious suggestions of friends and tutor.
+-   Button styles were taken from [getcssscan](https://getcssscan.com/css-buttons-examples).
+-   The books, their covers and description were taken from [Standard Ebooks](https://standardebooks.org/).
+
+### Acknowledgements
+
+-   My friends for all the fun we always have together.
+
+-   My Mentor for continuous helpful feedback.
+
+-   Tutor support for their **support**.
+
