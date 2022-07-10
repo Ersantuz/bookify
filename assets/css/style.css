@@ -17,10 +17,6 @@
     overflow-x: hidden;
 }
 
-::-webkit-scrollbar {
-    width: 0;
-}
-
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -168,7 +164,6 @@ footer p {
     text-align: center;
     text-decoration: none;
     user-select: none;
-    -webkit-user-select: none;
     touch-action: manipulation;
 } 
   
@@ -703,7 +698,6 @@ fieldset a:hover {
         .open-book .btn {
             width: 40vw;
             font-size: 3.3vw;
-            padding: auto;
         }
 
         .open-book p {
