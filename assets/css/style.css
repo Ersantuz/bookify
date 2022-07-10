@@ -164,8 +164,7 @@ footer p {
     display: inline-block;
     font-weight: 600;
     font-size: 1.2vw;
-    padding: 0 18px;
-    line-height: 50px;
+    padding: 9px 18px;
     text-align: center;
     text-decoration: none;
     user-select: none;
@@ -176,6 +175,7 @@ footer p {
 .btn:hover {
     box-shadow: #422800 2px 2px 0 0;
     transform: translate(2px, 2px);
+    color: var(--text);
 }
 
 /* About */
@@ -593,7 +593,7 @@ fieldset a:hover {
 
     }
 
-    /* For medium screens size from 680 px wide and down */
+    /* For small screens size from 680 px wide and down */
 
     @media screen and (max-width: 680px) {
         
@@ -641,7 +641,7 @@ fieldset a:hover {
 
         .btn {
             width: 25vw;
-            font-size: 1.5vh;
+            font-size: 1.2vh;
         }
     
         /* About */
@@ -714,6 +714,167 @@ fieldset a:hover {
 
         #close-render {
             font-size: 4vw;
+        }
+    }
+
+}
+
+/* For landscape orientation */
+
+@media (orientation: landscape) {
+
+    /* For medium screens size from 1100 px wide and down */
+
+    @media screen and (max-width: 1200px) {
+
+        /* Header */
+
+        header {
+            font-size: 1.3vw;
+            height: 10vh;
+            transform: translateY(-1.5vh);
+        }
+
+        .logo img {
+            width: 30px;
+            height: 30px;
+        }
+
+        /* Home Page */
+
+        #landing > article {
+            transform: translateY(25vh);
+        }
+
+        /* About */
+
+        #about p {
+            font-size: 1.8vw;
+        }
+
+        /* Fieldset */
+
+        fieldset {
+            transform: translateY(2vh);
+        }
+
+        fieldset a {
+            font-size: 1vw;
+        }
+
+        fieldset a:active {
+            transform: scale(1.2);
+            color: var(--text);
+            background-color:  var(--about);
+            font-weight: 800;
+        } 
+
+        /* Book */
+
+        #book-details {
+            transform: translateY(2vh);
+        }
+
+        /* Book Render */
+
+        #close-render {
+            font-size: 3vw;
+            z-index: 99;
+        }
+
+        .arrow {
+            width: 50vw;
+            font-size: larger;
+            height: 40vh;
+        }
+
+        .next i{
+            float: right;
+        }
+
+        @media screen and (min-height: 700px) {
+
+            /* Library */
+
+            #category {
+                transform: translateY(5vh);
+            }
+
+            /* Book */
+            .go-back {
+                transform: translateX(5vw) translateY(2vh);
+            }
+
+            #book-details {
+                transform: translateY(8vh);
+            }
+        }
+
+    }
+
+    /* For small screens size from 450 px height and down */
+
+    @media screen and (max-height: 450px) {
+        
+        /* Header */
+
+        header {
+            height: 15vh;
+            transform: translateY(-5vh);
+        }
+
+        /* headings and logo */
+
+        .logo img {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Footer */
+
+        footer p {
+            font-size: 50%;
+            transform: translateY(2vh);
+        }
+
+        /* Home Page */
+ 
+        /* About */
+
+        #about p {
+            font-size: 1.5vw;
+        }
+
+        /* Library */
+
+        /* Fieldset */
+
+        #category {
+            margin-bottom: 5vh;
+        }
+
+        fieldset {
+            margin-right: 2vw;
+        }
+
+        fieldset legend {
+            font-size: 1.5vw;
+        }
+
+        fieldset a {
+            font-size: 1.2vw;
+        } 
+
+        /* Book */
+
+        #book-details .btn {
+            padding: 0;
+        }
+        
+        /* Book Render */
+
+        #close-render {
+            font-size: 2vw;
         }
     }
 
