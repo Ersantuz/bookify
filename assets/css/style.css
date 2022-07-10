@@ -278,6 +278,7 @@ fieldset a {
     text-align: center;
     padding: 2vh 0;
     margin: 1%;
+    font-size: 1.3vh;
 } 
 
 fieldset a:hover {
@@ -412,6 +413,172 @@ fieldset a:hover {
     left: 2vw;
 }
 
+/* For portrait orientation */
 
+@media (orientation: portrait) {
+    
+    /* Landing Page */
+    #landing {
+        width: 100%;
+        height: 100%;
 
+        background: url('../images/homepage_sc.webp') no-repeat center center;
+        background-size: 100% 100%;
+    }
+    
+}
+
+/* For medium screens size from 1200 px wide and down */
+
+@media screen and (max-width: 1200px) {
+
+    /* Home Page */
+
+    #landing > article {
+        transform: translateY(30vh);
+    }
+
+    #landing h1 {
+        font-size: 7vw;
+        padding-right: 10vw;
+    }
+
+    #landing span {
+        padding-left: 20vw;
+    }
+
+    #landing p {
+        font-size: 3vw;
+    }
+
+    .btn {
+        width: 20vw;
+        font-size: 2vw;
+    } 
+  
+    .btn:active {
+        box-shadow: #422800 2px 2px 0 0;
+        transform: translate(2px, 2px);
+    }
+
+    /* About */
+
+    #about h1 {
+        transform: translateX(8vw) translateY(12vh);
+        font-size: 7vw;
+    }
+
+    #about span {
+        font-weight: 800;
+    }
+
+    #about p {
+        width: 65vw;
+        padding: 0 5vw;
+        float: right;
+        font-size: 3vw;
+        border-left: 2px solid var(--bg);
+        transform: translateY(20vh);
+    }
+
+    /* Library */
+
+    .page-title {
+        font-size: 3vw;
+        transform: translateX(5vw) translateY(2vh);
+    }
+
+    #shelve {
+        transform: translateX(5vw);
+        margin-top: 1vh;
+    }
+
+    .book {
+        margin-left: 5vw;
+        width: 22vw;
+    }
+
+    .book h1 {
+        font-size: 2vw;
+    }
+
+    .book h2 {
+        font-size: 2vw;
+    }
+
+    /* Fieldset */
+
+    fieldset {
+        transform: translateX(5vw);
+        grid-template-columns: 20vw 20vw 20vw 20vw;
+    }
+
+    fieldset legend {
+        font-size: 2vw;
+    }
+
+    fieldset a:active {
+        transform: scale(1.2);
+        color: var(--text);
+        background-color:  var(--about);
+        font-weight: 800;
+    } 
+
+    /* Book */
+
+    .go-back {
+        transform: translateX(5vw) translateY(1vh);
+        font-size: 2vw;
+    }
+
+    #book-details {
+        margin: 0;
+        padding: 1vh 5vw;
+    }
+
+    .open-book {
+        grid-template-rows: min-content max-content max-content max-content;
+        grid-template-columns: 100%;
+        text-align: center;
+    }
+
+    .open-book img {
+        margin: auto;
+        width: 60vw;
+    }
+
+    .open-book .btn {
+        width: 30vw;
+        font-size: 3vw;
+        margin: 5vh auto;
+
+        grid-row: 2;
+    }
+
+    .open-book div {
+        padding-top: 6.5vh;
+        margin: 4vh auto;
+        border-top: 1px solid var(--text);
+
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .open-book h1 {
+        font-size: 5vw;
+    }
+
+    .open-book h2 {
+        font-size: 3vw;
+    }
+
+    .open-book p {
+        grid-column: 1;
+        grid-row: 4;
+        font-size: 1.7vw;
+        margin: 1vh auto;
+        padding: 0 3vw;
+    }
+
+}
 
